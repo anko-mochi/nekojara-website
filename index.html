@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東ディバ適当ツール</title>
+    <style>
+        :root {
+            --bg: #f0f7f4;
+            --text: #4a4a4a;
+            --accent: #ff8fa3;
+            --sub-accent: #4dabf7;
+            --card: #ffffff;
+        }
+        body {
+            font-family: sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: var(--text);
+        }
+        .menu-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .menu-btn {
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 15px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid #e0e0e0;
+        }
+        .menu-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .menu-btn::before {
+            content: '🐾';
+        }
+        .v2-btn {
+            border-left: 8px solid var(--sub-accent);
+        }
+        .v1-btn {
+            border-left: 8px solid #adb5bd;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        .footer {
+            margin-top: auto;
+            font-size: 0.8em;
+            color: #888;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🐾 東ディバ適当ツール</h1>
+        <p style="font-size: 0.8em; color: #777;">攻略準備の司令部</p>
+    </div>
+
+    <div class="menu-container">
+        <!-- v2ボタン -->
+        <a href="nekojara_v2.html" class="menu-btn v2-btn">
+            デバフ計算ツール簡易版v2
+        </a>
+
+        <!-- v1ボタン -->
+        <a href="nekojara_v1.html" class="menu-btn v1-btn">
+            デバフ計算ツール簡易版v1
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 東ディバ適当ツール
+    </div>
+
+</body>
+</html>
